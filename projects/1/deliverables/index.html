@@ -5,5 +5,54 @@
 </head>
 <body>
 
+<h1>About me page</h1>
+<h2>About me page</h2>
+<h3>About me page</h3>
+<h4>About me page</h4>
+<h5>About me page</h5>
+<h6>About me page</h6>
+
+<p>Hey I'm a paragraph tag</p>
+
+<ul>
+	<li>List item 1</li>
+	<li>List item 2</li>
+</ul>
+
+<ol>
+	<li>List item 1</li>
+	<li>List item 2</li>
+	<li>List item 3</li>
+</ol>
+
+
+<form id="sayHi">
+	<input id="firstname" type="text" name="firstname">
+	<input type="submit" value="Submit">
+</form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+
+		$("#sayHi").on("submit", function (e) {
+
+			e.preventDefault();
+
+			var firstName = $("#firstname").val();
+
+			alert("Hello, " +firstName+". Type in your credit card number...");
+
+		});
+
+	});
+	
+</script>
+
+
+
+
 </body>
 </html>
